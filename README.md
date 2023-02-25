@@ -1,2 +1,9 @@
 # POST-DATA
-Posting JSON data 
+ 
+fetch(`/example/submit.json`, {
+ method: 'POST',
+ body: JSON.stringify({
+ email: document.getElementById('example-email').value,
+ comment: document.getElementById('example-comment').value
+ })
+});
